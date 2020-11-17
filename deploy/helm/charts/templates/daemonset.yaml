@@ -3,9 +3,6 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: {{ template "openebs-ndm.fullname" . }}
-  {{- with .Values.ndm.annotations }}
-  annotations: {{ toYaml . | nindent 4 }}
-  {{- end }}
   labels:
     {{- include "openebs-ndm.labels" . | nindent 4 }}
 spec:
