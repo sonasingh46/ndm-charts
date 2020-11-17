@@ -34,4 +34,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
         with:
-          charts_dir: deploy/helm
+          charts_dir: deploy/helm/charts
