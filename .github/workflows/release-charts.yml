@@ -33,4 +33,5 @@ jobs:
         uses: helm/chart-releaser-action@v1.0.0
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
-          config: ct.yaml
+        with:
+          charts_dir: helm/deploy
