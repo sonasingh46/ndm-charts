@@ -3,10 +3,10 @@ name: Chart Lint and Test
 on:
   push:
     paths:
-      - 'deploy/helm/**'
+      - 'deploy/helm/charts**'
   pull_request:
     paths:
-      - 'deploy/helm/**'
+      - 'deploy/helm/charts**'
 
 jobs:
   lint-test:
