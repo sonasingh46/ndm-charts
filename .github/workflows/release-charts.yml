@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     paths:
-      - 'deploy/helm/charts/**'
+      - 'deploy/helm/**'
     branches:
       - master
 
@@ -34,4 +34,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
         with:
-          charts_dir: deploy/helm/charts/
+          charts_dir: deploy/helm
