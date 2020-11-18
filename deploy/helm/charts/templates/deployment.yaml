@@ -16,9 +16,6 @@ spec:
       {{- include "openebs-ndm.operator.matchLabels" . | nindent 6 }}
   template:
     metadata:
-      {{- with .Values.ndmOperator.podAnnotations }}
-      annotations: {{ toYaml . | nindent 8 }}
-      {{- end }}
       labels:
         {{- include "openebs-ndm.operator.labels" . | nindent 8 }}
         {{- with .Values.ndmOperator.podLabels}}
