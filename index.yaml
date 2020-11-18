@@ -2,6 +2,32 @@ apiVersion: v1
 entries:
   openebs-ndm:
   - apiVersion: v2
+    appVersion: 2.3.1
+    created: "2020-11-18T20:21:12.774541327Z"
+    description: Kubernetes Storage Device Management. Also used to maintain the inventory of block devices.
+    digest: 2f63b148bbd8eb11cb803c72046c7fd2290510bf41536241be0d67f08d8bf361
+    home: http://www.openebs.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/openebs/icon/color/openebs-icon-color.png
+    keywords:
+    - cloud-native-storage
+    - block-storage
+    - ndm
+    - disk-inventory
+    - storage
+    maintainers:
+    - email: akhil.mohan@mayadata.io
+      name: akhilerm
+    - email: michaelfornaro@gmail.com
+      name: xUnholy
+    - email: prateek.pandey@mayadata.io
+      name: prateekpandey14
+    name: openebs-ndm
+    sources:
+    - https://github.com/openebs/node-disk-manager
+    urls:
+    - https://github.com/sonasingh46/ndm-charts/releases/download/openebs-ndm-2.3.1/openebs-ndm-2.3.1.tgz
+    version: 2.3.1
+  - apiVersion: v2
     appVersion: 2.3.0
     created: "2020-11-17T21:13:56.440210379Z"
     description: Kubernetes Storage Device Management. Also used to maintain the inventory of block devices.
