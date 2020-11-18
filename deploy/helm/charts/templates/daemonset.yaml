@@ -13,9 +13,6 @@ spec:
       {{- include "openebs-ndm.matchLabels" . | nindent 6 }}
   template:
     metadata:
-      {{- with .Values.ndm.podAnnotations }}
-      annotations: {{ toYaml . | nindent 8 }}
-      {{- end }}
       labels:
         {{- include "openebs-ndm.labels" . | nindent 8 }}
         {{- with .Values.ndm.podLabels}}
